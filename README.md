@@ -26,6 +26,20 @@ Large pull requests (PRs) are difficult to review because they contain too many 
 
 Consistency in code formatting makes it easier for everyone on the team to read and understand the codebase.
 
+**Bad: Inconsistent naming conventions and spacing**
+```
+class userData:
+    def __init__(self, Name, Age):
+        self.Name=Name
+        self.Age=Age
+```
+**Good: Follows PEP 8 conventions**
+```
+class UserData:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
 ### 3. Write Clear and Concise Code
 
 Avoid unnecessary complexity and make your code as readable as possible. The goal is for another developer to understand it without extra explanation.
@@ -59,9 +73,9 @@ Authors should annotate code before the review occurs because annotations guide 
 - ### Practice lightweight code reviews
 Between email, over-the-shoulder, Microsoft Word, tool-assisted and hybrids of all types there are countless ways to collaboratively review code. However, to fully optimize your team´s time and to effectively measure its results, a lightweight, tool-assisted process is recommended.
 
->> When done right,
+>> "When done right,
 code reviews actually
-save time in the long run.
+save time in the long run."
 
 ## Choosing the Correct Review Type
 You should choose your review method based on your team’s strengths and weaknesses. This will depend on different factors, that are unique to your organization. Perhaps you have a team spread out over many different time zones. Asynchronous would be a good choice.
